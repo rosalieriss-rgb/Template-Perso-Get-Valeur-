@@ -38,24 +38,14 @@ export default function RootLayout({ children }) {
               justifyContent: "space-between",
             }}
           >
-            {/* valeur-logo */}
-            <div style={{ display: "flex", alignItems: "center", gap: "10px" }}>
-              <div
-                style={{
-                  width: 32,
-                  height: 32,
-                  borderRadius: 999,
-                  border: "1px solid rgba(148, 163, 184, 0.7)",
-                  display: "flex",
-                  alignItems: "center",
-                  justifyContent: "center",
-                  fontWeight: 600,
-                  fontSize: 18,
-                  letterSpacing: "0.02em",
-                }}
-              >
-                V
-              </div>
+<div style={{ display: "flex", alignItems: "center", gap: "10px" }}>
+  <img
+    src="/valeur-logo.png"   // change extension if needed
+    alt="Valeur logo"
+    style={{ height: "32px", width: "32px", borderRadius: "999px" }}
+  />
+</div>
+
               <span
                 style={{
                   fontSize: 16,
