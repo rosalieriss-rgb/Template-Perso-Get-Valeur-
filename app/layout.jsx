@@ -38,14 +38,18 @@ export default function RootLayout({ children }) {
               justifyContent: "space-between",
             }}
           >
-<div style={{ display: "flex", alignItems: "center", gap: "10px" }}>
-  <img
-    src="/valeur-logo.png"   // change extension if needed
-    alt="Valeur logo"
-    style={{ height: "32px", width: "32px", borderRadius: "999px" }}
-  />
-</div>
-
+            {/* Left side: logo + wordmark */}
+            <div style={{ display: "flex", alignItems: "center", gap: "10px" }}>
+              <img
+                src="/valeur-logo.png"   // <- make sure this file is in /public
+                alt="Valeur logo"
+                style={{
+                  height: "32px",
+                  width: "32px",
+                  borderRadius: "999px",
+                  objectFit: "cover",
+                }}
+              />
               <span
                 style={{
                   fontSize: 16,
@@ -58,7 +62,7 @@ export default function RootLayout({ children }) {
               </span>
             </div>
 
-            {/* Simple minimal nav text */}
+            {/* Right side: nav */}
             <nav
               style={{
                 display: "flex",
