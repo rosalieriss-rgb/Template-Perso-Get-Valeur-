@@ -38,7 +38,7 @@ export default function RootLayout({ children }) {
               justifyContent: "space-between",
             }}
           >
-            {/* Logo */}
+            {/* valeur-logo */}
             <div style={{ display: "flex", alignItems: "center", gap: "10px" }}>
               <div
                 style={{
