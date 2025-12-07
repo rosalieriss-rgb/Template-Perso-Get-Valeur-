@@ -21,7 +21,7 @@ export default function RootLayout({ children }) {
       >
         <header
           style={{
-            borderBottom: "1px solid rgba(148, 163, 184, 0.35)", // slate-400/35
+            borderBottom: "1px solid rgba(148, 163, 184, 0.35)",
             backdropFilter: "blur(10px)",
             position: "sticky",
             top: 0,
@@ -39,9 +39,11 @@ export default function RootLayout({ children }) {
             }}
           >
             {/* Left side: logo + wordmark */}
-            <div style={{ display: "flex", alignItems: "center", gap: "10px" }}>
+            <div
+              style={{ display: "flex", alignItems: "center", gap: "10px" }}
+            >
               <img
-                src="/valeur-logo.png"   // <- make sure this file is in /public
+                src="/valeur-logo.jpeg" // make sure this file is in /public
                 alt="Valeur logo"
                 style={{
                   height: "32px",
